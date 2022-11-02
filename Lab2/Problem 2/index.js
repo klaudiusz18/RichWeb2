@@ -7,7 +7,7 @@ fetch('http://jsonplaceholder.typicode.com/posts?')
 function wordfreq(string) {
     var words = string.replace(/[.]/g, '').split(/\s/);
     var map = {};
-    words.forEach(function(words) {
+    words.forEach(function(word) {
         if(!map[word]) {
             map[word] = 0;
         }
