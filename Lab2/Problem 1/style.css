@@ -1,5 +1,6 @@
 h2 {
     text-align: center;
+    padding: 10px;
 }
 
 .Contacts {
@@ -13,7 +14,29 @@ h2 {
     width: 1000px;
     height: 50px;
     margin-left: 20%;
+}
 
-   
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 50px auto;
+    
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 15px;
+}
+
+.summary {
+    padding-top: 5%;
 }
 
