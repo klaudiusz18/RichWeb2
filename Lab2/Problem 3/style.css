@@ -1,0 +1,13 @@
+.repository {
+    border: 1px solid black;
+    font-size: 35px;
+    overflow: hidden; overflow-y: scroll;
+}
+
+#userrepos {
+    float: right;
+    overflow: hidden; overflow-y: scroll;
+    position: relative;
+    height: 210px;
+    width: 1000px;
+}
