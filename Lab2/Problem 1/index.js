@@ -14,7 +14,6 @@ function displayDetails() {
     }
 
 
-
     var display = document.getElementById("results");
 
     var newRow = display.insertRow(row);
