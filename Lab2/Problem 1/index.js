@@ -8,7 +8,10 @@ function displayDetails() {
     var number = document.getElementById("number").value;
     var email = document.getElementById("email").value;
 
-
+    if(!name || !number || !email) {
+        alert("Please fill in all fields");
+        return;
+    }
 
 
 
