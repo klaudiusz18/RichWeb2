@@ -8,9 +8,9 @@
     float: right;
     overflow: hidden; overflow-y: scroll;
     position: relative;
-    height: 180px;
-    width: 1000px;
-    padding: 30px;
+    height: 50vh;
+    width: 100vh;
+    padding: 100px;
 }
 
 #personalinfo {
@@ -30,6 +30,13 @@ img {
     padding: 5px;
     border: 2px solid black;
 }
+
+#button{
+    width: 300px;
+    height: 40px;
+    margin: 1%;
+}
+
 
 
 

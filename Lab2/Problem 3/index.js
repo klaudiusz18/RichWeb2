@@ -1,6 +1,7 @@
+//fetching from github api to display different github users
 function button(user) {  
     fetch("https://api.github.com/users/"+user)
-    .then(res => res.json())//response type
+    .then(res => res.json())
     .then(data => DisplayGitUserInfo(data))
 }
 
@@ -11,6 +12,7 @@ form.onsubmit = (event) => {
 
 }
 
+//function that gets elements from the html varaiable I made and then assigns values from the github api to them
 function DisplayGitUserInfo(json) {
     let data = json
     console.log(data);
@@ -30,9 +32,10 @@ function DisplayGitUserInfo(json) {
 function GitRepos(repos_url) {
     fetch(repos_url)
     .then(res => res.json())
-    .then(data => data.forEach(repo => addElement("name =" + repo.name + "\nDescription = "+ repo.description)));
+    .then(data => data.forEach(repo => addElement("name: " + repo.name + "\n\nDescription: \n\n"+ repo.description)));
 }
 
+// function to add new elements to the div
 function addElement (text) {
     const newDiv = document.createElement("div", id="repository");
     newDiv.setAttribute("class","repository")
